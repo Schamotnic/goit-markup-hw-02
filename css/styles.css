@@ -1,0 +1,323 @@
+/*  палитра цветов и переменные для стилизации */
+
+:root {
+  --font-family-site: "Roboto", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+  --text-color: #212121;
+  --text-light-color: #ffffff;
+  --text-dark-color: #000000;
+  --text-muted-color: #757575;
+  --accent-color: #2196f3;
+  --background-prime-color: #ffffff;
+  --background-secondary-color: #2f303a;
+  --backgrount-third-color: #f5f4fa;
+}
+
+/* Исходные параметры для всего контента */
+
+body {
+  font-family: var(--font-family-site);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  font-weight: var(--font-weight-regular);
+  color: var(--text-color);
+}
+
+/* стиль ссылок сайта */
+
+.link {
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+/* стилизация кнопок сайта */
+
+.btn {
+  font-family: var(--font-family-site);
+  border: 0;
+  border-radius: 4px;
+}
+
+/* общие настройки для заголовков */
+
+.title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* скрытые заголовки сайта */
+/* ! временный костыль */
+
+.hidden-title {
+  display: none;
+}
+
+/*  стиль списков в шапке и секциях сайта */
+
+.list {
+  list-style-type: none;
+}
+
+/* общий стиль для параграфов */
+
+.text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* логотип */
+
+.logo-link {
+  font-family: "Raleway", sans-serif;
+  font-weight: var(--font-weight-bold);
+  font-size: 26px;
+  text-decoration: none;
+  line-height: 1.2;
+  color: var(--text-dark-color);
+}
+
+/* стилизация первого слова логотипа */
+.logo-accent {
+  color: var(--accent-color);
+}
+
+/* ===================== */
+/* офомление шапки сайта */
+
+/* оформление навигации по сайту */
+
+.nav-box .link {
+  font-weight: var(--font-weight-medium);
+  color: var(--text-color);
+}
+
+/* ссылки контактов в шапке */
+
+.contact-list .link {
+  font-weight: var(--font-weight-medium);
+  color: var(--text-muted-color);
+}
+
+/* офомление шапки сайта */
+/* ===================== */
+
+/* ================== */
+/* оформление подвала */
+
+.footer-box {
+  background-color: var(--background-secondary-color);
+}
+
+/* стилизация логотипа в подвале */
+
+.footer-box .logo-link {
+  color: var(--text-light-color);
+}
+
+/* стилизция шрифта в списке с контактами для подвала */
+
+.footer-box .list-item {
+  font-style: normal;
+}
+
+.footer-box .link {
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-box .address-link {
+  color: var(--text-light-color);
+}
+
+/* оформление подвала */
+/* ================== */
+
+/* акцент при наведении и фокусе на ссылке а также активная ссылка странички */
+
+.link:hover,
+.link:focus,
+.link.active,
+.footer-box .link:hover,
+.footer-box .link:focus {
+  color: var(--accent-color);
+}
+
+/* ============================== */
+/* Оформление контента index.html */
+
+.hero-box {
+  background-color: var(--background-secondary-color);
+}
+
+/* заголовок секции hero */
+
+.hero-box .title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: var(--font-weight-black);
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  color: var(--text-light-color);
+}
+
+/* кнопка перехода к заказу в секции hero */
+
+.hero-box .btn {
+  font-weight: var(--font-weight-bold);
+  font-size: 16px;
+  line-height: 1.88;
+  background: var(--accent-color);
+  color: var(--text-light-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* стилизация кнопки перехода к заказу при наведении курсора */
+
+.hero-box .btn:hover,
+.hero-box .btn:focus {
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* секция особенности */
+
+/* заголовки в списках особенностей */
+
+.features-box .title {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: var(--font-weight-bold);
+}
+
+/* параграфы в списках особенностей */
+
+.features-box .text {
+  margin-top: 10px;
+  margin-bottom: 0;
+  line-height: 1.71;
+  color: var(--text-muted-color);
+}
+
+/* Секция Чем мы занимаемся */
+
+/* стилизация заголовков секции Чем мы занимаемся */
+
+.doing-box .title {
+  font-weight: var(--font-weight-bold);
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+/* Секция наша команда */
+
+.team-box {
+  background-color: var(--backgrount-third-color);
+}
+
+/* стилизация заголовков секции наша команда */
+
+.team-box .title {
+  font-weight: var(--font-weight-bold);
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+/* размеры и положение карточек сотрудников */
+
+.team-list {
+  list-style-type: none;
+}
+
+/* стилизация карточки сотрудника */
+
+.team-list .item {
+  background-color: var(--background-prime-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* стилизация фамилия, имя сотрудника */
+
+.team-list .title {
+  padding-top: 30px;
+  text-align: center;
+  font-weight: var(--font-weight-medium);
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/* стилизация должности стотрудинка */
+
+.team-list .text {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--text-muted-color);
+}
+
+/* Офорление контента index.html */
+/* ============================= */
+
+/* ================================= */
+/* Офорление контента portfolio.html */
+
+/* стилизация списка фильтров для портфолио  */
+
+.filters-list {
+  justify-content: space-between;
+}
+
+/* стилизация кнопки фильтра для портфолио */
+
+.filters-list .btn {
+  padding: 6px 22px;
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);
+  line-height: 1.63;
+  color: var(--text-color);
+  background-color: var(--backgrount-third-color);
+}
+
+/* изменения кнопки при наведении курсора */
+
+.filters-list .btn:hover,
+.filters-list .btn:focus,
+.filters-list .btn:active {
+  cursor: pointer;
+  outline: none;
+  color: var(--text-light-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* стиль элемента портфолио */
+
+.sample-list .item {
+  border: 1px solid #eee;
+  background-color: var(--background-prime-color);
+}
+
+/* стилизация заголовка элемента портфолио */
+
+.sample-list .title {
+  font-weight: var(--font-weight-bold);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+/* стилизация описания элемента портфолио */
+
+.sample-list .text {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--text-muted-color);
+}
